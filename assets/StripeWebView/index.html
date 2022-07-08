@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe - Checkout</title>
+    <!-- add your required font which is used in the app -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- add the stripe.js library v3 -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <!-- link to style.css folder -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form action="/charge" method="post" id="payment-form">
+        <div class="form-row">
+            <!-- start of card inputs holder -->
+            <div class="cardHolder">
+                <!-- card holder name -->
+                <input id='CardHolderName' class="StripeName" placeholder="Cardholder Name" />
+                <!-- card number input -->
+                <div id="card-element1">
+                    <!-- A Stripe Element will be inserted here. -->
+                </div>
+
+                <div class="cardVal">
+                    <!-- card expiry date -->
+                    <div style="width: 100%; margin-right: 10px;" id="card-element2">
+                        <!-- A Stripe Element will be inserted here. -->
+                    </div>
+                    <!-- card cvv -->
+                    <div style="width: 100%; margin-left: 10px;" id="card-element3">
+                        <!-- A Stripe Element will be inserted here. -->
+                    </div>
+                </div>
+                <!-- button to save card -->
+                <button class="submit">Save Card</button>
+                <!-- Used to display form errors. -->
+                <div id="card-errors" role="alert"></div>
+            </div>
+            <!-- end of card inputs holder -->
+        </div>
+    </form>
+
+    <!--Path to Javascript file which will handle the stripe elements input -->
+    <script src="stripe.js"></script>
+
+    <!-- To send the data to App or to receive the data from the app by using following DOM -->
+    <script>
+     //Receive message from the app
+        document.addEventListener("message", function (data) {
+     //Should be the String data
+            console.log(data.data) 
+        });
+     //Send message to app
+        window.postMessage('hi')
+    </script>
+</body>
+
+</html>

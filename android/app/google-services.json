@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "106470437336",
+    "project_id": "aylineservices-494e4",
+    "storage_bucket": "aylineservices-494e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106470437336:android:c35c0bbe4a5932e49bc2ad",
+        "android_client_info": {
+          "package_name": "com.hackthem.AylineApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106470437336-8s0shqmna98864ao4rlnq1pc1os0qd3r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hackthem.AylineApp",
+            "certificate_hash": "eab190e5b5c01af769f7caf7d93ba7d494cc2d31"
+          }
+        },
+        {
+          "client_id": "106470437336-5itef4v4oa3tgair7ag1cgpt9a14s5sb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATiCZR_boKytYlT3Q66d5wlvE2PLl1fhY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106470437336-5itef4v4oa3tgair7ag1cgpt9a14s5sb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
